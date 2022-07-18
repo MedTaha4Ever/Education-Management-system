@@ -4,18 +4,7 @@
  if(isset($_POST['add_teacher_info']))
  {
 	 //$add_t_fullname,$add_t_address,$add_t_email,$add_t_username,$add_t_pass,$add_t_father,$add_t_mother,$add_t_dob,$add_t_qualification,$add_t_contact,$add_t_staff,$add_t_gender
-	  $add_t_fullname = $_POST['add_t_fullname'];
-	 $add_t_address = $_POST['add_t_address'];
-	 $add_t_email = $_POST['add_t_email'];
-	 $add_t_username = $_POST['add_t_username'];
-	 $add_t_pass = $_POST['add_t_pass'];
-	 $add_t_father = $_POST['add_t_father'];
-	 $add_t_mother = $_POST['add_t_mother'];
-	 $add_t_dob = $_POST['add_t_dob'];
-	 $add_t_qualification = $_POST['add_t_qualification'];
-	 $add_t_contact = $_POST['add_t_contact'];
-	 $add_t_staff = $_POST['add_t_staff'];
-	 $add_t_gender = $_POST['add_t_gender'];
+	  extract($_POST);
 	 if($add_t_fullname=="" OR $add_t_address=="" OR $add_t_email=="" OR $add_t_username=="" OR $add_t_pass=="" OR $add_t_father=="" OR $add_t_mother=="" OR $add_t_dob=="" OR $add_t_qualification=="" OR $add_t_contact=="" OR $add_t_staff=="" OR $add_t_gender=="")
 	 {
 		 echo "<script>alert('Some Field are missing....');</script>";
